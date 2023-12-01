@@ -1,4 +1,4 @@
--- Q.4.Display the total number of customers based on gender who have placed individual orders of worth at least Rs.3000.
+-- Display the total number of customers based on gender who have placed individual orders of worth at least Rs.3000.
 
 SELECT COUNT(T2.cus_gender) AS No_Of_Customer,T2.cus_gender AS Gender FROM 
 (
