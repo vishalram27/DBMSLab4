@@ -1,6 +1,6 @@
 -- Create a stored procedure to display supplier id, name, rating and Type_of_supplier.
 -- If rating >4 then “Genuine Supplier” if rating >2 “Average Supplier” else “Supplier should not be considered”. 
--- Created stored procedure below it is showing error but its created the stored procedure and exceuted successfully
+-- Created stored procedure below the stored procedure is exceuted successfully.
 
 CREATE PROCEDURE 'supplier_ratings'()
 BEGIN
@@ -27,9 +27,7 @@ END
 
 -- To execute the stored procedure we have to use the below sql code
 -- Method one if DB is not selected
-
 call e_commerce.supplier_ratings();
 
 -- Method two if DB is selected
-
 call supplier_ratings();
