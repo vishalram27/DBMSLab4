@@ -1,10 +1,10 @@
 -- Display the Id and Name of the Product ordered after “2021-10-05”.
 
-select p.pro_id,p.pro_name from product as p
-inner join 
+SELECT p.pro_id,p.pro_name FROM product AS p
+INNER JOIN 
 (
 	SELECT o.*, sp.pro_id FROM orders AS O
-	inner join 
-	supplier_pricing as sp on sp.pricing_id=o.pricing_id and O.ord_date>"2021-10-05"
-) as q 
-on p.pro_id = q.pro_id;
+	INNER JOIN
+	supplier_pricing AS sp ON sp.pricing_id=o.pricing_id AND O.ord_date>"2021-10-05"
+) AS q 
+ON p.pro_id = q.pro_id;
